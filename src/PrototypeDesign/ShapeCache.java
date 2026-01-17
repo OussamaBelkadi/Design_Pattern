@@ -16,5 +16,4 @@ public class ShapeCache{
         circle.setId("1");
         shapeMap.put(circle.getId(), circle);
     }
-}{
 }

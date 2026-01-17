@@ -1,4 +1,42 @@
+package SingletonDesign;
 
+public class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {
+        // Private constructor to prevent instantiation
+    }
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+
+    public void showMessage() {
+        System.out.println("Singleton instance invoked!");
+    }
+}package SingletonDesign;
+
+public class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {
+        // Private constructor to prevent instantiation
+    }
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+
+    public void showMessage() {
+        System.out.println("Singleton instance invoked!");
+    }
+}
 # Design Patterns in Java
 
 Welcome to the **Design Patterns** project! This repository serves as a practical laboratory for implementing and understanding various software design patterns using Java 21.
